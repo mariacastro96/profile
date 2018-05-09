@@ -2,6 +2,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: rgb(90, 90, 90);
   background-color: rgb(246, 246, 246);
+  margin: 0;
 }
 
 h1, h2 {
@@ -12,7 +13,10 @@ h1, h2 {
 h1 {
   color: rgb(216, 74, 83);
   font-size: 30px;
+}
 
+h2 {
+  font-weight: lighter;
 }
 
 table p {
@@ -24,9 +28,9 @@ div {
   border:3px solid black;
 }*/
 
-.box {
+#info, #net, #likes {
   background-color: white;
-  width: 80%;
+  width: 60%;
   margin: 10px auto;
   padding: 10px;
   border-radius: 3px;
@@ -70,6 +74,7 @@ div {
   letter-spacing: 1px;
   font-weight: medium;
   font-size: 20px;
+  box-shadow: 1px 1px 1px rgba(90, 90, 90, 0.4)
 }
 
 .button:hover {
@@ -98,7 +103,7 @@ div {
 .interest-picture {
  padding: 5px;
  border-radius: 7px;
- width: 300px;
+ width: 200px;
  margin: 5px;
 }
 
@@ -108,10 +113,42 @@ div {
   text-align: justify;
   font-size: 18px;
   font-weight: lighter;
-
 }
 
+#sidebar {
+  float: left;
+  background-color: rgb(216, 74, 83);
+  width: 10%;
+  height: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+}
 
+#content {
+  float: right;
+  width: 90%;
+}
+
+.side-icon {
+  text-align: center;
+  margin: 50px;
+}
+
+.side-icon a {
+  color: rgb(246, 246, 246, 0.6);
+}
+
+.side-icon a:hover {
+  color: rgb(90, 90, 90);
+}
+.sidebar-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
 
 @media (max-width: 1360px) {
   /* For a screen < 960px, this CSS will be read */
@@ -199,4 +236,17 @@ div {
   font-size: 12px;
   }
 }
+
+@media (max-width: 1000px) {
+  /* For a screen < 960px, this CSS will be read */
+  #content {
+    width: 100%;
+  }
+
+  #sidebar {
+    width: 0;
+  }
+}
+
+
 
