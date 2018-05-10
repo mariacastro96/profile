@@ -19,6 +19,10 @@ h2 {
   font-weight: lighter;
 }
 
+h4 {
+  color: rgb(90, 90, 90);
+}
+
 table p {
   font-size: 16px;
   font-weight: 300;
@@ -28,7 +32,7 @@ div {
   border:3px solid black;
 }*/
 
-#info, #net, #likes {
+#info, #net, #likes, #footer, #form {
   background-color: white;
   width: 60%;
   margin: 10px auto;
@@ -74,7 +78,7 @@ div {
   letter-spacing: 1px;
   font-weight: medium;
   font-size: 20px;
-  box-shadow: 1px 1px 1px rgba(90, 90, 90, 0.4)
+  box-shadow: 1px 1px 1px rgba(90, 90, 90, 0.4);
 }
 
 .button:hover {
@@ -147,9 +151,42 @@ div {
   padding-left: 0;
   margin-top: 50px;
   margin-bottom: 50px;
-
 }
 
+.footer-link {
+  color: rgb(201, 202, 205);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: rgb(216, 74, 83);
+}
+
+.footer-text {
+  margin: 10px 50px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+/*.first-name {
+  width: 50%;*/
+  /*height: 50%;
+  float: left;
+  background-color: rgb(201, 202, 205);*/
+/*  box-shadow: 1px 1px 1px rgba(90, 90, 90, 0.4);
+*/}
+
+/*.last-name {
+  width: 50%;
+  height: 50%;
+  float: right;
+  background-color: rgb(201, 202, 205);
+  display: block;
+}
+*/
+/*.email {
+  margin: 10px;
+}*/
 @media (max-width: 1360px) {
   /* For a screen < 960px, this CSS will be read */
   .button {
